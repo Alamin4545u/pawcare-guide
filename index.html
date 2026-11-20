@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dog &amp; Cat Care Guide: Nutrition, Safety &amp; Health | PawCare</title>
+<meta name="description" content="Practical dog and cat care guidance for pet owners. Explore nutrition, grooming, exercise, food safety, a daily calorie estimator, and preventive care checklists.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#14213d">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PawCare Guide">
+<meta property="og:title" content="Dog &amp; Cat Care Guide | PawCare">
+<meta property="og:description" content="Explore practical dog and cat care guidance, nutrition tips, food safety information, a calorie estimator, and preventive care checklists.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dog &amp; Cat Care Guide | PawCare">
+<meta name="twitter:description" content="Practical care guidance and tools for dog and cat owners.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PawCare Guide",
+  "description": "Practical dog and cat care guidance, nutrition information, food safety tools, and preventive care checklists.",
+  "inLanguage": "en-US"
+}
+</script>
+<style>
+:root{
+  --paper:#f4f7fb;--surface:#ffffff;--ink:#14213d;--muted:#4b5b78;--rule:#d3dcea;--tint:#e8eff9;
+  --cobalt:#2452d6;--accent:#f5b700;--on-accent:#14213d;
+  --danger:#b42318;--warn:#8a5a00;--ok:#1d7a4f;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0b1220;--surface:#111a2c;--ink:#e8edf7;--muted:#9eaccb;--rule:#243250;--tint:#15213a;
+    --cobalt:#7fa6ff;--accent:#f5b700;--on-accent:#0b1220;
+    --danger:#ff8f85;--warn:#f2c35b;--ok:#6fd3a0;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0b1220;--surface:#111a2c;--ink:#e8edf7;--muted:#9eaccb;--rule:#243250;--tint:#15213a;
+  --cobalt:#7fa6ff;--accent:#f5b700;--on-accent:#0b1220;
+  --danger:#ff8f85;--warn:#f2c35b;--ok:#6fd3a0;color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:30}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:700;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);letter-spacing:-.02em;max-width:16ch}
+h2{font-size:clamp(1.8rem,3.4vw,2.5rem);letter-spacing:-.01em;margin-bottom:.6rem}
+h3{font-size:1.25rem;margin-bottom:.5rem}
+p{margin:0 0 1rem}
+a{color:var(--cobalt)}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+section[id]{scroll-margin-top:76px}
+.section{padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--rule)}
+.intro{max-width:62ch;color:var(--muted);margin-bottom:32px}
+.muted{color:var(--muted)}
+.small{font-size:.9rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--on-accent);padding:8px 14px;border-radius:8px;z-index:50}
+.skip:focus{left:12px}
+
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--rule);transition:box-shadow .3s}
+.site-header.scrolled{box-shadow:0 6px 20px rgba(20,33,61,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:1.35rem;color:var(--ink);text-decoration:none}
+.menu{display:flex;gap:6px}
+.menu a{color:var(--ink);text-decoration:none;padding:8px 12px;border-radius:8px;font-size:.95rem}
+.menu a:hover{background:var(--tint)}
+.menu-btn{display:none;height:44px;padding:0 16px;background:none;border:1px solid var(--rule);border-radius:10px;cursor:pointer;color:var(--ink);font:inherit;font-weight:600}
+@media (max-width:820px){
+  .menu-btn{display:block}
+  .menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--rule);padding:8px 4%}
+  .menu.open{display:flex}
+}
+
+.hero{padding:clamp(56px,9vw,120px) 0 clamp(48px,6vw,80px)}
+.hero-inner{animation:rise .8s ease both}
+.hero .lead{font-size:1.2rem;color:var(--muted);max-width:52ch;margin:20px 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:10px;border:2px solid transparent;font:inherit;font-weight:600;text-decoration:none;cursor:pointer;transition:background .2s,filter .2s}
+.btn-accent{background:var(--accent);color:var(--on-accent)}
+.btn-accent:hover{filter:brightness(1.06)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--tint)}
+.btn-sm{padding:8px 14px;font-size:.92rem}
+
+.tabs{display:flex;gap:28px;border-bottom:1px solid var(--rule);margin-bottom:32px}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:10px 0;margin-bottom:-1px;font:inherit;font-size:1.05rem;font-weight:600;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 48px}
+.topic{padding:24px 0;border-top:1px solid var(--rule)}
+.topic ul{margin:0;padding-left:1.2rem;color:var(--muted)}
+.topic li{margin-bottom:.45rem}
+.topic li::marker{color:var(--accent)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+form{display:grid;gap:18px}
+label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+input,select{font:inherit;font-weight:400;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);width:100%}
+input:focus,select:focus{outline:3px solid var(--accent);outline-offset:1px}
+.error{color:var(--danger);font-weight:600;min-height:1.5em;margin:0}
+.panel{background:var(--tint);border-radius:14px;padding:32px;min-height:260px}
+.kcal{font-family:Georgia,serif;font-size:clamp(2.6rem,7vw,4rem);font-weight:700;line-height:1;margin:8px 0 14px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 0;padding:0;list-style:none}
+.facts li{border-top:1px solid var(--rule);padding-top:10px}
+.facts b{display:block;font-size:1.1rem}
+.facts span{font-size:.85rem;color:var(--muted)}
+
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.toolbar input{flex:1 1 280px}
+.toolbar select{flex:0 0 200px;width:auto}
+.foods{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.food{border-left:4px solid var(--bar);padding:14px 0 14px 18px;border-bottom:1px solid var(--rule)}
+.food-head{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;justify-content:space-between}
+.food-head strong{font-size:1.02rem}
+.food p{margin:4px 0 6px;color:var(--muted)}
+.risk{font-size:.85rem;font-weight:600;color:var(--bar)}
+.for{font-size:.85rem;color:var(--muted)}
+.r-high{--bar:var(--danger)}
+.r-med{--bar:var(--warn)}
+.r-safe{--bar:var(--ok)}
+.empty{padding:20px 0}
+
+.ck-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:20px}
+.ck-top select{width:auto;min-width:180px}
+.ck-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0 8px;font-size:.95rem}
+.bar{height:6px;background:var(--rule);border-radius:99px;overflow:hidden}
+.bar span{display:block;height:100%;width:0;background:var(--cobalt);transition:width .4s ease}
+.check{display:flex;gap:14px;align-items:flex-start;font-weight:500;padding:14px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.check input{width:20px;height:20px;padding:0;margin:3px 0 0;flex:0 0 auto;accent-color:var(--cobalt)}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+
+.alarm{border-left:5px solid var(--danger);padding:8px 0 8px 28px}
+.alarm ul{margin:0 0 20px;padding-left:1.2rem}
+.alarm li{margin-bottom:.4rem}
+.alarm p{margin:0 0 6px}
+.alarm a{color:var(--danger);font-weight:600}
+
+.site-footer{padding:36px 0 48px;border-top:1px solid var(--rule);font-size:.92rem;color:var(--muted)}
+.site-footer p{margin:0 0 .5rem}
+.to-top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--paper);font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s}
+.to-top.show{opacity:1;pointer-events:auto}
+
+@media (max-width:820px){.split{grid-template-columns:1fr;gap:32px}}
+@media (max-width:560px){.facts{grid-template-columns:1fr 1fr 1fr}.panel{padding:24px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="wrap nav">
+    <a class="logo" href="#top">PawCare Guide</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#care">Care guide</a>
+      <a href="#calculator">Calorie estimator</a>
+      <a href="#food">Food safety</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#emergency">Emergencies</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <h1>Everyday care for dogs and cats, explained clearly.</h1>
+      <p class="lead">Feeding, grooming, exercise, training, and preventive health from a practical, vet-informed guide, plus three tools: a calorie estimator, a food safety checker, and a care checklist that saves your progress.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="#care">Read the care guide</a>
+        <a class="btn btn-line" href="#calculator">Estimate daily calories</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="care" class="section">
+    <div class="wrap">
+      <h2>Care guide</h2>
+      <p class="intro">Choose your pet. This advice is general, and your veterinarian can tailor it to your animal.</p>
+      <div class="tabs" role="tablist" aria-label="Pet type">
+        <button role="tab" id="tab-dog" type="button" aria-selected="true" aria-controls="care-panel" data-species="dog">Dogs</button>
+        <button role="tab" id="tab-cat" type="button" aria-selected="false" aria-controls="care-panel" tabindex="-1" data-species="cat">Cats</button>
+      </div>
+      <div id="care-panel" class="topics" role="tabpanel" aria-labelledby="tab-dog"></div>
+    </div>
+  </section>
+
+  <section id="calculator" class="section">
+    <div class="wrap split">
+      <div>
+        <h2>Daily calorie estimator</h2>
+        <p class="intro">Enter your pet's weight and activity level for a starting estimate. Puppies, kittens, seniors, and pets with health conditions need guidance from a vet.</p>
+        <form id="calcForm" novalidate>
+          <label>Pet type
+            <select id="cSpecies"><option value="dog">Dog</option><option value="cat">Cat</option></select>
+          </label>
+          <label>Weight in pounds
+            <input id="cWeight" type="number" inputmode="decimal" min="0.5" max="300" step="0.1" placeholder="For example, 30">
+          </label>
+          <label>Activity level
+            <select id="cActivity">
+              <option value="low">Low: mostly resting, indoors</option>
+              <option value="mod" selected>Moderate: daily walks or play</option>
+              <option value="high">High: running, agility, working</option>
+            </select>
+          </label>
+          <p class="error" id="cError" role="alert"></p>
+          <div><button class="btn btn-accent" type="submit">Calculate</button></div>
+        </form>
+      </div>
+      <div class="panel" id="cResult" aria-live="polite">
+        <p class="muted">Your estimate will appear here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="food" class="section">
+    <div class="wrap">
+      <h2>Food safety checker</h2>
+      <p class="intro">Check a food before sharing it. Never feed anything marked toxic, and when you are unsure, ask your vet first.</p>
+      <div class="toolbar">
+        <input id="fSearch" type="search" placeholder="Search a food, for example grapes" aria-label="Search foods">
+        <select id="fSpecies" aria-label="Filter by pet type">
+          <option value="all">Dogs and cats</option>
+          <option value="dog">Dogs</option>
+          <option value="cat">Cats</option>
+        </select>
+      </div>
+      <ul class="foods" id="foodList"></ul>
+      <p class="empty muted" id="foodEmpty" hidden>No match. If you are not sure about this food, call your veterinarian before feeding it.</p>
+    </div>
+  </section>
+
+  <section id="checklist" class="section">
+    <div class="wrap">
+      <h2>Preventive care checklist</h2>
+      <p class="intro">Tick off tasks as you complete them. Your progress is saved in this browser.</p>
+      <div class="ck-top">
+        <select id="ckSpecies" aria-label="Pet type">
+          <option value="dog">Dog checklist</option>
+          <option value="cat">Cat checklist</option>
+        </select>
+        <button class="btn btn-line btn-sm" id="ckReset" type="button">Reset checklist</button>
+      </div>
+      <div class="ck-meta"><span id="ckText" aria-live="polite"></span></div>
+      <div class="bar" aria-hidden="true"><span id="ckBar"></span></div>
+      <div id="ckList" class="ck-list"></div>
+    </div>
+  </section>
+
+  <section id="emergency" class="section">
+    <div class="wrap">
+      <div class="alarm">
+        <h2>Get emergency care right away if your pet has:</h2>
+        <ul>
+          <li>Difficulty breathing, or gums that are blue, gray, or white</li>
+          <li>Collapse, seizures, or inability to stand</li>
+          <li>Heavy bleeding or a deep wound</li>
+          <li>Suspected poisoning or swallowed toxic items</li>
+          <li>A swollen, hard belly with unproductive retching, which can signal bloat in dogs</li>
+          <li>Straining in the litter box with little or no urine, a serious sign in male cats</li>
+        </ul>
+        <p>Call your nearest emergency veterinary hospital first.</p>
+        <p>ASPCA Animal Poison Control: <a href="tel:+18884264435">(888) 426-4435</a></p>
+        <p>Pet Poison Helpline: <a href="tel:+18557647661">(855) 764-7661</a></p>
+        <p class="small muted">Consultation fees may apply. Save these numbers in your phone now.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>PawCare Guide provides general educational information. It does not replace advice from a licensed veterinarian.</p>
+    <p>Trusted references: <a href="https://www.aspca.org" target="_blank" rel="noopener">ASPCA</a>, <a href="https://www.avma.org" target="_blank" rel="noopener">AVMA</a>, and <a href="https://www.aaha.org" target="_blank" rel="noopener">AAHA</a>.</p>
+    <p>&copy; <span id="yr"></span> PawCare Guide</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">&uarr;</button>
+
+<script>
+(() => {
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+
+  $('#yr').textContent = new Date().getFullYear();
+
+  /* Header shadow, back-to-top, mobile menu */
+  const header = $('#header'), toTop = $('#toTop');
+  const onScroll = () => {
+    header.classList.toggle('scrolled', scrollY > 8);
+    toTop.classList.toggle('show', scrollY > 600);
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', () =>
+    scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+
+  const menuBtn = $('#menuBtn'), menu = $('#menu');
+  const setMenu = open => { menu.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', String(open)); };
+  menuBtn.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.addEventListener('click', e => { if (e.target.tagName === 'A') setMenu(false); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+  /* Care guide with accessible tabs */
+  const CARE = {
+    dog: [
+      { t: 'Feeding', items: [
+        'Choose a complete, balanced food labeled for your dog\'s life stage, with an AAFCO statement.',
+        'Most adult dogs eat twice a day. Measure portions to prevent weight gain.',
+        'Keep fresh water available at all times.'] },
+      { t: 'Grooming', items: [
+        'Brush weekly, or several times a week for long or double coats.',
+        'Bathe every 4 to 8 weeks or when dirty, since over-bathing dries the skin.',
+        'Trim nails every 3 to 4 weeks and check ears weekly.'] },
+      { t: 'Exercise', items: [
+        'Most adult dogs need 30 to 120 minutes of activity a day, depending on breed and energy.',
+        'Mix walks, sniffing time, fetch, and puzzle toys.',
+        'Adjust intensity for puppies, seniors, and hot or cold weather.'] },
+      { t: 'Training', items: [
+        'Use positive reinforcement with treats, praise, and play.',
+        'Keep sessions short, around 5 to 10 minutes, and end on a success.',
+        'Socialize puppies safely during roughly 3 to 14 weeks of age.'] },
+      { t: 'Health', items: [
+        'Schedule a wellness exam every year, and more often for seniors.',
+        'Keep core vaccines and year-round parasite prevention up to date.',
+        'Brush teeth several times a week, or ask your vet about dental care.'] },
+      { t: 'Home and safety', items: [
+        'Use a well-fitting harness and an ID tag with a current phone number.',
+        'Store medications, cleaners, and toxic foods out of reach.',
+        'Never leave a dog alone in a parked car, even briefly.'] }
+    ],
+    cat: [
+      { t: 'Feeding', items: [
+        'Cats are obligate carnivores, so choose a high-protein food formulated for their life stage.',
+        'Feed measured meals, since cats gain weight easily when grazing.',
+        'Offer fresh water in several spots, and add wet food to boost hydration.'] },
+      { t: 'Grooming', items: [
+        'Brush regularly, daily for long-haired cats, to reduce hairballs.',
+        'Trim nails every 2 to 3 weeks and provide scratching posts.',
+        'Check ears, eyes, and teeth during routine handling.'] },
+      { t: 'Enrichment', items: [
+        'Schedule 10 to 15 minute wand-toy sessions a couple of times a day.',
+        'Add vertical perches, window views, and puzzle feeders.',
+        'Rotate toys to keep hunting instincts engaged.'] },
+      { t: 'Litter box', items: [
+        'Provide one box per cat, plus one extra.',
+        'Scoop daily and fully replace litter every 1 to 2 weeks.',
+        'Use unscented litter, since many cats avoid strong scents.'] },
+      { t: 'Health', items: [
+        'Cats hide illness, so watch for changes in appetite, weight, drinking, or litter habits.',
+        'Keep yearly exams, core vaccines, and parasite prevention current.',
+        'Spaying or neutering prevents many health and behavior problems.'] },
+      { t: 'Home and safety', items: [
+        'Keep cats indoors or supervised outdoors to reduce injury and disease risk.',
+        'Keep lilies, string, and small objects away from curious paws.',
+        'Use a breakaway collar with ID, and keep the microchip registered.'] }
+    ]
+  };
+
+  const panel = $('#care-panel'), tabs = $$('[role="tab"]');
+  const renderCare = sp => {
+    panel.innerHTML = CARE[sp].map(c =>
+      `<article class="topic"><h3>${c.t}</h3><ul>${c.items.map(i => `<li>${i}</li>`).join('')}</ul></article>`
+    ).join('');
+  };
+  const selectTab = (btn, focus) => {
+    tabs.forEach(t => { const on = t === btn; t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1; });
+    panel.setAttribute('aria-labelledby', btn.id);
+    renderCare(btn.dataset.species);
+    if (focus) btn.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => selectTab(t));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      e.preventDefault();
+      selectTab(tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length], true);
+    });
+  });
+  selectTab(tabs[0]);
+
+  /* Calorie estimator: RER = 70 x kg^0.75, multiplied by an activity factor */
+  const MULT = { dog: { low: 1.4, mod: 1.6, high: 2.0 }, cat: { low: 1.0, mod: 1.2, high: 1.4 } };
+  const LABEL = { low: 'low', mod: 'moderate', high: 'high' };
+  $('#calcForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const sp = $('#cSpecies').value, act = $('#cActivity').value;
+    const lb = parseFloat($('#cWeight').value);
+    const err = $('#cError'), out = $('#cResult');
+    if (!Number.isFinite(lb) || lb < 0.5 || lb > 300) {
+      err.textContent = 'Enter a weight between 0.5 and 300 pounds.';
+      out.innerHTML = '<p class="muted">Your estimate will appear here.</p>';
+      return;
+    }
+    err.textContent = '';
+    const kg = lb / 2.2046;
+    const rer = 70 * Math.pow(kg, 0.75);
+    const daily = Math.round(rer * MULT[sp][act]);
+    out.innerHTML = `
+      <h3>Estimated daily energy</h3>
+      <p class="kcal">${daily.toLocaleString('en-US')} kcal</p>
+      <p class="muted">A starting estimate for a ${lb} lb ${sp} with ${LABEL[act]} activity. Divide by the kcal per cup printed on your food's label to find the daily portion.</p>
+      <ul class="facts">
+        <li><b>${Math.round(rer)}</b><span>Resting energy, kcal</span></li>
+        <li><b>${MULT[sp][act]}&times;</b><span>Activity factor</span></li>
+        <li><b>${kg.toFixed(1)} kg</b><span>Body weight</span></li>
+      </ul>`;
+  });
+
+  /* Food safety checker */
+  const FOODS = [
+    { n: 'Chocolate, especially dark and baking', s: ['dog', 'cat'], r: 'high', t: 'Contains theobromine and caffeine. Can cause vomiting, rapid heart rate, tremors, and seizures.' },
+    { n: 'Grapes and raisins', s: ['dog'], r: 'high', t: 'Can cause sudden kidney failure, even in small amounts.' },
+    { n: 'Onions, garlic, and chives', s: ['dog', 'cat'], r: 'high', t: 'Damages red blood cells and can cause anemia. Cooked, powdered, and dried forms are also harmful.' },
+    { n: 'Xylitol, found in sugar-free gum and some peanut butters', s: ['dog'], r: 'high', t: 'Triggers a rapid insulin release that can drop blood sugar dangerously and damage the liver.' },
+    { n: 'Lilies, including Easter, tiger, and day lilies', s: ['cat'], r: 'high', t: 'Even pollen or vase water can cause fatal kidney failure in cats. Keep them out of the home.' },
+    { n: 'Alcohol and raw bread dough', s: ['dog', 'cat'], r: 'high', t: 'Alcohol can cause vomiting, breathing trouble, and coma. Rising dough can bloat the stomach.' },
+    { n: 'Caffeine, from coffee, tea, or energy drinks', s: ['dog', 'cat'], r: 'high', t: 'Can cause restlessness, rapid breathing, heart problems, and seizures.' },
+    { n: 'Macadamia nuts', s: ['dog'], r: 'med', t: 'Can cause weakness, vomiting, tremors, and an elevated body temperature.' },
+    { n: 'Avocado', s: ['dog', 'cat'], r: 'med', t: 'The fruit, pit, and leaves contain persin, which can cause vomiting and diarrhea. Pits are a choking hazard.' },
+    { n: 'Cooked bones', s: ['dog', 'cat'], r: 'med', t: 'Can splinter and cause choking, blockages, or tears in the digestive tract.' },
+    { n: 'Plain cooked chicken or rice', s: ['dog', 'cat'], r: 'safe', t: 'Fine as an occasional, unseasoned treat. Keep all treats to roughly 10% of daily calories.' },
+    { n: 'Plain blueberries', s: ['dog', 'cat'], r: 'safe', t: 'A low-calorie treat that is fine in small amounts.' }
+  ];
+  const RISK = { high: 'Toxic', med: 'Use caution', safe: 'Generally safe' };
+  const RCLASS = { high: 'r-high', med: 'r-med', safe: 'r-safe' };
+  const fList = $('#foodList'), fSearch = $('#fSearch'), fSpecies = $('#fSpecies'), fEmpty = $('#foodEmpty');
+  const renderFoods = () => {
+    const term = fSearch.value.trim().toLowerCase(), sp = fSpecies.value;
+    const hits = FOODS.filter(f =>
+      (sp === 'all' || f.s.includes(sp)) &&
+      (!term || (f.n + ' ' + f.t).toLowerCase().includes(term)));
+    fList.innerHTML = hits.map(f =>
+      `<li class="food ${RCLASS[f.r]}">
+        <div class="food-head"><strong>${f.n}</strong><span class="risk">${RISK[f.r]}</span></div>
+        <p>${f.t}</p>
+        <span class="for">For: ${f.s.map(x => x === 'dog' ? 'dogs' : 'cats').join(' and ')}</span>
+      </li>`).join('');
+    fEmpty.hidden = hits.length > 0;
+  };
+  fSearch.addEventListener('input', renderFoods);
+  fSpecies.addEventListener('change', renderFoods);
+  renderFoods();
+
+  /* Preventive care checklist, saved in localStorage when available */
+  const CHECK = {
+    dog: [
+      ['vet', 'Annual wellness exam with your veterinarian'],
+      ['rabies', 'Rabies vaccine, required by law in most states'],
+      ['dhpp', 'Core vaccines: DHPP (distemper, hepatitis, parainfluenza, parvovirus)'],
+      ['parasite', 'Year-round heartworm, flea, and tick prevention'],
+      ['dental', 'Dental check, plus brushing at home'],
+      ['weight', 'Body weight checked at home each month'],
+      ['micro', 'Microchip registered with current contact details'],
+      ['spay', 'Spay or neuter status reviewed with your vet']
+    ],
+    cat: [
+      ['vet', 'Annual wellness exam with your veterinarian'],
+      ['rabies', 'Rabies vaccine, required by law in most states'],
+      ['fvrcp', 'Core vaccine: FVRCP (rhinotracheitis, calicivirus, panleukopenia)'],
+      ['felv', 'FeLV test or vaccine if your cat goes outdoors'],
+      ['parasite', 'Flea, tick, and intestinal parasite prevention'],
+      ['dental', 'Dental check for tartar, gum disease, or tooth resorption'],
+      ['weight', 'Body weight checked at home each month'],
+      ['micro', 'Microchip registered with current contact details']
+    ]
+  };
+  const ckSel = $('#ckSpecies'), ckList = $('#ckList'), ckBar = $('#ckBar'), ckText = $('#ckText');
+  const loadDone = sp => {
+    try { return JSON.parse(localStorage.getItem('pawcare-check-' + sp)) || []; } catch { return []; }
+  };
+  const saveDone = (sp, ids) => {
+    try { localStorage.setItem('pawcare-check-' + sp, JSON.stringify(ids)); } catch { /* storage unavailable */ }
+  };
+  const updateProgress = () => {
+    const sp = ckSel.value, total = CHECK[sp].length;
+    const n = $$('input:checked', ckList).length, pct = Math.round(n / total * 100);
+    ckBar.style.width = pct + '%';
+    ckText.textContent = `${n} of ${total} complete`;
+  };
+  const renderCheck = () => {
+    const sp = ckSel.value, done = new Set(loadDone(sp));
+    ckList.innerHTML = CHECK[sp].map(([id, text]) =>
+      `<label class="check"><input type="checkbox" data-id="${id}"${done.has(id) ? ' checked' : ''}><span>${text}</span></label>`
+    ).join('');
+    updateProgress();
+  };
+  ckList.addEventListener('change', e => {
+    if (!e.target.matches('input[type="checkbox"]')) return;
+    saveDone(ckSel.value, $$('input:checked', ckList).map(i => i.dataset.id));
+    updateProgress();
+  });
+  ckSel.addEventListener('change', renderCheck);
+  $('#ckReset').addEventListener('click', () => { saveDone(ckSel.value, []); renderCheck(); });
+  renderCheck();
+})();
+</script>
+</body>
+</html>
