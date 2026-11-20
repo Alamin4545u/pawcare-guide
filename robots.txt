@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# After publishing, replace the placeholder below with your real GitHub Pages URL.
-Sitemap: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY/sitemap.xml
+Sitemap: https://alamin4545u.github.io/pawcare-guide/sitemap.xml
