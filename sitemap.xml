@@ -1,8 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://alamin4545u.github.io/pawcare-guide/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/</ns0:loc><ns0:changefreq>weekly</ns0:changefreq><ns0:priority>1.0</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-care-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/puppy-care-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/senior-dog-care.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-nutrition-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/best-food-for-dogs.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-grooming-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-exercise-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-training-positive-reinforcement.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-dental-care.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/cat-care-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/kitten-care-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/indoor-cat-enrichment.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/cat-litter-box-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/cat-nutrition-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/cat-grooming-guide.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/cat-dental-care.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/dog-food-safety.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/cat-food-safety.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/pet-emergency-warning-signs.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+  <ns0:url><ns0:loc>https://alamin4545u.github.io/pawcare-guide/pet-parasite-prevention.html</ns0:loc><ns0:changefreq>monthly</ns0:changefreq><ns0:priority>0.7</ns0:priority></ns0:url>
+</ns0:urlset>
